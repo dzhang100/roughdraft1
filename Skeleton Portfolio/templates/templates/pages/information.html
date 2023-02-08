@@ -1,0 +1,101 @@
+{% extends "base.html" %} 
+{% block title %}Information{% endblock %} 
+
+{% block content%}
+<html lang="en">
+
+  <body>    
+      <main>
+        <div class="sign-up">
+          <h1>Sign up Now!</h1>
+          <hr>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+            mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+            mollit anim id est laborum."</p>
+
+            <div class="sign-up-section">
+              <div class="column">
+                <h2>Tutors</h2>
+                <hr>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                  eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                  mollit anim id est laborum.</p>
+                  <div class="buttons">
+                    <button><a href="" target="_blank">Learn more!</a></button>
+                    <button><a href="" target="_blank">Sign up!</a></button>
+                  </div>
+              </div>
+              <div class="column">
+                <h2>Tutee</h2>
+                <hr>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                  eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                  mollit anim id est laborum.</p>
+                  <div class="buttons">
+                    <button><a href="" target="_blank">Learn more!</a></button>
+                    <button><a href="" target="_blank">Sign up!</a></button>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </main> 
+
+      <footer>
+        <hr>
+        <div class="row">
+            <div class="col">
+              <img src="{{url_for('static', filename='Images/logo.png')}}">
+              <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor 
+                </p>
+            </div>
+            <div class="col">
+                <h3>Information <div class="underline"><span></span></div></h3>
+                <p>Old Scona Academic</p>
+                <p>Edmonton, Alberta</p>
+                <p class="email-id">Email.com</p>
+                <h4>(780)-123-4567</h4>
+            </div>
+      
+            <div class="col">
+                <h3>Links<div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/about.html">Contacts</a></li>
+                    <li><a href="/pages/about.html">Resources</a></li>
+                    <li><a href="/pages/about.html">Sign Up!</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Social Media<div class="underline"><span></span></div></h3>
+      
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-pinterest"></i>
+      
+                </div>
+            </div>
+      
+        </div>
+        <hr>
+        <p class="copyright">Life Long Learning © 2023 - All Rights Reserved</p>
+      </footer>
+  </body>
+</html>
+
+{%endblock%}

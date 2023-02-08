@@ -1,0 +1,1249 @@
+/* Icon attribution */
+/*  <a href="https://iconscout.com/icons/link" target="_blank">Link Icon</a> by <a href="https://iconscout.com/contributors/promotion-king" target="_blank">Rank Sol</a>*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+button:hover{
+  cursor: pointer;
+}
+
+
+:root {
+  --color-primary: #191d2b;
+  --color_darker: rgb(4, 4, 53);
+  --color-gold: rgb(179, 153, 93);
+  --color-white: #FFFFFF;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #dbe1e8;
+  --color-grey-2: #b2becd;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #2a2e35;
+}
+
+body, html {
+  transition: all 0.4s ease-in-out;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}/*# sourceMappingURL=styles.css.map */
+
+hr{
+  background-color: white;
+}
+
+/* .hero */
+.hero_container {
+	width: 100%;
+	height: 100%;
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero_text {
+	padding-left: 15rem;
+	padding-top: 15rem;
+}
+
+.hero_text h1 {
+	font-size: 4rem;
+	color: var(--color-gold)
+}
+
+.hero_text h2 {
+	font-size: 2rem;
+}
+
+.learn-more {
+	padding-top: 5rem;
+}
+
+.lm {
+	padding-bottom: 1rem;
+}
+
+/* Hero Images */
+
+.images {
+	padding-top: 15rem;
+	padding-left: 3rem;
+}
+
+.images img {
+  position: relative;
+	height: 50vh;
+	width: auto;
+	border-radius: 10px;
+	border: 2px solid var(--color-gold);
+	box-shadow: rgba(179, 153, 93, 0.4) -5px 5px, rgba(179, 153, 93, 0.3) -10px 10px, rgba(179, 153, 93, 0.2) -15px 15px, rgba(179, 153, 93, 0.1) -20px 20px, rgba(179, 153, 93, 0.05) -25px 25px;
+}
+
+/* Scroll Mouse */
+
+.mouse {
+    width: 26px;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid var(--color-gold);
+    position: relative;
+    overflow: hidden;
+}
+.mouse .roll {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    width: 4px;
+    margin-left: -2px;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--color-gold);
+    -webkit-animation: mouseScroll .8s cubic-bezier(.7,0,.3,1) infinite alternate;
+    animation: mouseScroll .8s cubic-bezier(.7,0,.3,1) infinite alternate;
+    z-index: 2;
+}
+.mouse .rollshadow {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    width: 4px;
+    margin-left: -2px;
+    height: 4px;
+    background: #aaa;
+    border-radius: 4px;
+    -webkit-animation: mouseScroll .8s cubic-bezier(.7,0,.3,1) infinite alternate;
+    animation: mouseScroll .8s cubic-bezier(.7,0,.3,1) infinite alternate;
+        animation-delay: 0s;
+    -webkit-animation-delay: 80ms;
+    animation-delay: 80ms;
+    z-index: 1;
+}
+@-webkit-keyframes mouseScroll {
+ 0% {
+  -webkit-transform:translateY(0);
+  transform:translateY(0)
+ }
+ 100% {
+  -webkit-transform:translateY(14px);
+  transform:translateY(14px)
+ }
+}
+@keyframes mouseScroll {
+ 0% {
+  -webkit-transform:translateY(0);
+  transform:translateY(0)
+ }
+ 100% {
+  -webkit-transform:translateY(14px);
+  transform:translateY(14px)
+ }
+}
+
+.bubblebox{
+  padding-top: 2rem;
+  margin: 3rem;
+  position: relative;
+  margin-top: 5rem;
+  outline: solid var(--color-gold);
+  width: 60%;
+  border-radius: 15px;
+  padding-bottom: 2rem;
+  color: var(--color-gold);
+  box-shadow: 0 0 50px var(--color-gold);
+}
+
+.bubblebox h1{
+  position: relative;
+  text-align: center;
+}
+
+.bubblebox p{
+  margin: 1rem;
+  color: var(--color-white);
+}
+
+.bubblebox-right{
+  margin: auto;
+  outline:solid var(--color-gold);
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  margin-right: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 0 50px var(--color-gold);
+}
+.bubblebox-right img{
+  border-radius: 15px;
+  position: relative;
+  width: 220%;
+}
+
+.testimonials{
+  text-align: center;
+  border-radius: 15px;
+  padding-bottom: 5rem;
+  width: 100%;
+}
+
+.testimonials h1{
+  color: var(--color-gold);
+  padding-bottom: 2rem;
+  margin-top: 15rem;
+}
+
+.testimonials .row .column{
+  float: left;
+  text-align: left;
+}
+
+.testimonials .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.testimonials .row .column p{
+  margin: 1rem;
+}
+
+.testimonials .stars{
+  color: var(--color-primary);
+  padding-top: 2rem;
+  margin-left: 1rem;
+}
+
+.testimonials h4{
+  text-align: left;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: 20px;
+}
+
+
+
+
+.signup-home{
+  text-align: center;
+  justify-content: center;
+}
+
+.signup-home h2{
+  padding-top: 1rem;
+}
+
+.signup-home div{
+  border-radius: 15px;
+  outline: solid var(--color-gold);
+  width: 70%;
+  margin: auto;
+}
+
+.signup-home p{
+  margin: 3rem;
+}
+
+.signup-home button{
+  outline: none;
+  margin-bottom: 1rem;
+  border: none;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--color-gold);
+  color: var(--color-primary);
+  
+}
+
+.signup-home span{
+  margin: 2rem;
+}
+/* side bar styles */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: var(--color_darker);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  justify-content: left;
+  text-align: left;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--color-gold);
+  display: block;
+  transition: 0.3s;
+}
+.sidebar .bottom{
+  position: relative;
+  margin-top: 60%;
+}
+.sidebar .bottom hr{
+  margin: auto;
+  width: 90%;
+}
+
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: var(--color-gold);
+}
+
+.openbtn {
+  font-size: 20px;
+  border-radius: 15px 0 0 15px;
+  position: fixed;
+  right: 0;
+  top: 30px;
+  cursor: pointer;
+  background-color: rgb(177, 140, 56);
+  color: var(--color-white);
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  /* outline: solid var(--color-black);
+  outline-width: 1px; */
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+footer{
+  margin-top: 10rem;
+  position: relative;
+  z-index: 0;
+  height: 270px;
+  width: 100%;
+  color: var(--color-white);
+  font-size: 13px;
+  line-height: 20px
+}
+
+
+
+footer .row{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 85%;
+  margin: auto;
+}
+
+footer .row .col{
+  flex-basis: 25%;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+footer .row .col:nth-child(2){
+  flex-basis: 15%;
+}
+
+footer .logo{
+  width: 25%;
+  margin-bottom: 15px;
+}
+footer .row .col h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+footer ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+footer ul li a{
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+
+footer .social-icons .fab{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background-color: var(--color-white);
+  margin-right: 15px;
+  cursor: pointer;
+}
+footer .copyright{
+  text-align: center;
+  margin-top: 2px;
+}
+
+footer .underline{
+  width: 100%;
+  height: 5px;
+  background: var(--color-gold);
+  border-radius: 3px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+}
+
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-primary);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 10px;
+}
+
+
+
+
+
+
+/* about us pg */
+
+.about_intro{
+  position: relative;
+  margin-top: 3rem;
+  height: 100vh;
+}
+
+.about_intro img{
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-80%);
+  max-width: 50vw;
+}
+
+.about_intro .text_section{
+  position: absolute;
+  left: 50vw;
+  width: 40vw;
+  top: 35vh;
+  background: var(--color-gold);
+  padding: 1rem;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.about_intro .text_section h1{
+  text-align: center;
+  margin: 1rem;
+}
+
+.about_intro .text_section p{
+  text-align: center;
+}
+
+.about_intro .section{
+  text-align: center;
+  background-color: none;
+  margin: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.about_intro button{
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+}
+
+.meet-team{
+  margin-top: 0;
+  text-align: center;
+  position: relative;
+  height: fit-content;
+}
+.meet-team h1{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.meet-team hr{
+  margin: 1rem;
+}
+
+.meet-team .executives{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3rem;
+}
+.meet-team .executives .portfolio img{
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+  position: relative;
+}
+.meet-team .executives .portfolio{
+  margin: auto;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.meet-team .executives .portfolio .title {
+  text-align: center;
+  overflow: auto;
+}
+.meet-team .executives .portfolio .overlay{
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+  z-index: 1;
+  opacity: 0;
+  text-align: left;
+}
+.meet-team .executives .portfolio .overlay p{
+  margin: 1rem;
+}
+.meet-team .executives .portfolio .overlay h1{
+  margin: 1rem;
+  position: absolute;
+  bottom: 0rem;
+}
+
+.meet-team .executives .portfolio .overlay:hover{
+  transition: 0.2s;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+/* Contact us page */
+
+.contacts .row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contacts h1{
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  color: var(--color-gold);
+}
+.contacts .texts p{
+  margin: 2rem;
+}
+.contacts hr{
+  margin: 1rem;
+}
+.contacts .column1 {
+  margin: 2rem;
+  background-color: var(--color-gold);
+  border-radius: 15px;
+  text-align: center;
+}
+.contacts .column1 h1{
+  margin: 2rem;
+  color: var(--color-white);
+}
+
+.contacts .column1 .logo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contacts .column1 .logo .icon{
+  margin: 2rem;
+  color: var(--color-white);
+}
+.contacts .column1 .logo .icon img{
+  color: var(--color-black);
+}
+
+.contacts .column2 {
+  margin: 2rem;
+  border-radius: 15px;
+}
+
+
+
+
+
+/* contact form */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid var(--color-primary); /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: none /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: var(--color-gold);
+  color: var(--color-primary);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 15px;
+  background-color: var(--color-white);
+  padding: 1rem;
+  color: var(--color-primary);
+}
+
+
+
+
+
+/* resources page */
+.resources {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.resources .col {
+  background-color: var(--color-gold);
+  box-shadow: 0 0 5px var(--color-gold);
+  margin: 2rem;
+  border-radius: 15px;
+}
+.resources-starter h1{
+  margin: 3rem;
+  text-align: center;
+}
+
+.resources ul{
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.resources h3{
+  margin: 1rem;
+}
+.resources h4{
+  margin: 1rem;
+}
+
+.resources ul a{
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+/* Clear floats after the columns */
+
+
+/* Column code */
+.column{
+  background-color: var(--color-gold);
+  box-shadow: 0 0 5px var(--color-gold);
+  margin: 2rem;
+  border-radius: 15px;
+}
+
+
+/* Sign up page */
+
+.sign-up-section{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.sign-up h1{
+  text-align: center;
+  margin-top: 3rem;
+}
+.sign-up p{
+  margin: 2rem; 
+}
+
+.sign-up hr{
+  margin: 2rem;
+}
+
+.sign-up-section .column p{
+  margin: 2rem;
+  text-align: left;
+}
+
+.sign-up-section .column hr{
+  margin-bottom: 1rem;
+}
+
+.sign-up-section .column h2{
+  margin: 2rem;
+  text-align: center;
+}
+
+.sign-up-section .column .buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-section .column button{
+  margin: 2rem;
+  padding: 10px;
+  background-color: var(--color-primary);
+  border-radius: 15px;
+  border: none;
+  width: 100%;
+}
+.sign-up-section .column a{
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+
+
+/* signup page css */
+
+
+/* signup and login form css */
+.signup{
+  background-color: var(--color-gold);
+  border-radius: 15px;
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  text-align: center;
+}
+.signup h3{
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.signup form{
+  text-align: left;
+  margin: auto;
+  display: block;
+  margin: 1rem;
+}
+
+.signup form input{
+  width: 100%; /* Full width */
+  padding: 6px; /* Some padding */ 
+  border: 1px solid var(--color-primary);
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.signup button{
+  display: block;
+  margin: auto;
+  padding: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  color: var(--color-white);
+  border: none;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+}
+
+
+
+
+/* flashing messages */
+
+/* alert message */
+.alert-message{
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  background-color: #ec463e;
+  box-shadow:0 0 15px 5px rgb(189, 62, 62);
+}
+
+/* success message */
+.success-message{
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  background-color: #00970d;
+  box-shadow:0 0 15px 5px rgb(18, 196, 1);
+  border: none;
+  color: white;
+}
+
+
+/* Responsive css */
+
+@media only screen and (min-width: 1000px) {
+  .hero_text {
+    padding-left: 5rem;
+    padding-top: 10rem;
+  }
+  .images {
+    padding-top: 10rem;
+    padding-left: 3rem;
+    margin-right: 5rem;
+  }
+
+  
+  
+}
+
+
+
+@media (min-width: 850px) and (max-width: 1000px) {
+  .contacts .row{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contacts .column1 .logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* home page */
+  .hero_container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+      grid-template-columns: 1.5fr 2fr;
+  }
+  .images {
+    padding-top: 10rem;
+    padding-left: 1.5rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .images img {
+    width: 50vw;
+    justify-content: center;
+  }
+  .hero_text h1 {
+    font-size: 150%;
+    color: var(--color-gold)
+    
+  }
+  .hero_text h2 {
+    font-size: 100%;
+  }
+
+  .testimonials .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero_text {
+    padding-left: 3rem;
+    padding-top: 10rem;
+  }
+
+  /* about page */
+
+  
+  .meet-team{
+    margin-top: auto;
+  }
+  
+  .about_intro{
+    position: relative;
+    margin-top: 3rem;
+    height: 100vh;
+  }
+  
+  .about_intro img{
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-80%);
+    max-width: 50vw;
+  }
+  
+  .about_intro .text_section{
+    position: absolute;
+    left: 50vw;
+    width: 40vw;
+    top: 15vh;
+    background: var(--color-gold);
+    padding: 1rem;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media only screen and (max-width: 850px) {
+
+/* main page */
+  .images {
+    padding-top: 10rem;
+    padding-left: 3rem;
+    width: 80vw;
+  }
+  .images img{
+    width: 60vw;
+  }
+  .hero_container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  .hero_text {
+    padding-left: 3rem;
+    padding-top: 10rem;
+  }
+  .hero_text h1 {
+    font-size: 2rem;
+    color: var(--color-gold)
+  }
+  
+  .hero_text h2 {
+    font-size: 1rem;
+  }
+
+  .bubblebox{
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 90%;
+  }
+  .bubblebox-right{
+    margin: auto;
+    margin-right: 3rem;
+  }
+  .bubblebox-right img{
+    border-radius: 15px;
+    position: relative;
+    width: 220%;
+  }
+
+  .sign-up-section{
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+  .resources{
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+
+  footer .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+    margin: auto;
+  }
+  .testimonials .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contacts .row{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contacts .column1 .logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contacts .column1 {
+    margin: 2rem;
+    background-color: var(--color-gold);
+    border-radius: 15px;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+  .about_intro{
+  position: relative;
+  margin-top: 1rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 3rem;
+  }
+
+  .about_intro img{
+    position: relative;
+    left: auto;
+    transform: translateX(0);
+    max-width: 80vw;
+    margin: auto;
+    border-radius: 15px;
+  }
+
+  .about_intro .text_section{
+    position: relative;
+    background: var(--color-gold);
+    padding: 1rem;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80vw;
+    left: auto;
+    top: 0;
+    margin: auto;
+        margin-bottom: 1rem;
+        margin-top: 0;
+  }
+
+  .meet-team .executives{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+  }
+  
+  
+
+  
+}
+
+
+
+
+@media only screen and (max-width: 450px) {
+  .contacts .row{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contacts .column1 .logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contacts .column1 {
+    margin: 0;
+    margin-bottom: 3rem;
+    padding: 1rem;
+  }
+  .contacts .column2 {
+    margin: 0;
+    width: 100vw;
+    justify-content: center;
+  }
+/* signup section */
+  .sign-up-section .column{
+    margin: 1rem;
+  }
+
+/* main page */
+  .hero_text h1 {
+    font-size: 150%;
+    color: var(--color-gold)
+    
+  }
+  .hero_text h2 {
+    font-size: 100%;
+  }
+
+  .hero_container {
+    width: 100vw;
+    height: fit-content;
+    display: grid;
+      grid-template-columns: 1fr;
+  }
+
+  .images {
+    position: relative;
+    padding-left: 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .images img {
+    width: 85vw;
+    height: auto;
+    margin-bottom: 10rem;
+    margin-top: 3rem;
+    box-shadow: 0 0 50px var(--color-gold);
+  }
+  .bubblebox{
+    padding-top: 2rem;
+    margin: auto;
+    margin-bottom: 10rem;
+    width: 90%;
+  }
+
+  .bubblebox-right{
+    outline:solid var(--color-gold);
+    width: 90vw;
+    justify-content: center;
+    margin: auto;
+  }
+  .bubblebox-right img{
+    justify-content: center;
+    border-radius: 15px;
+    position: relative;
+    width: 90vw;
+  }
+
+  .testimonials .row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .signup-home p{
+    margin: 1rem;
+  }
+  .signup-home div{
+    width: 80%;
+  }
+  
+
+
+
+
+  /* about us */
+
+  .about_intro{
+  position: relative;
+  margin-top: 1rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  }
+
+  .about_intro img{
+    position: relative;
+    left: auto;
+    transform: translateX(0);
+    max-width: 80vw;
+    margin: auto;
+    border-radius: 15px;
+   
+  }
+
+  .about_intro .text_section{
+    position: relative;
+    background: var(--color-gold);
+    padding: 1rem;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80vw;
+    left: auto;
+    top: 0;
+    margin: auto;
+        margin-bottom: 1rem;
+        margin-top: 0;
+  }
+
+  .meet-team{
+    margin-top: 0vh;
+  }
+  .meet-team .executives{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+  }
+
+  .meet-team .executives .portfolio .overlay{
+    width: 70vw;
+  }
+  
+}
+
+
+@media only screen and (max-width: 300px) {
+  .contacts .row{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contacts .column1 .logo{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .texts p{
+    margin: 1rem;
+    margin-bottom: 5rem;
+  }
+  .contacts .column1 {
+    margin: 0;
+    margin-bottom: 5rem;
+    width: 90vw;
+  }
+  .contacts .column2 {
+    margin: 0;
+    width: 100vw;
+    justify-content: center;
+  }
+  .testimonials .row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .testimonials .row .column{
+    margin: 1rem;
+  }
+
+  .signup div{
+    width: 90%;
+  }
+  
+
+/* about page */
+  .meet-team .executives{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+  }
+  .meet-team .executives .portfolio img{
+    width: 90vw;
+    border-radius: 15px;
+    position: relative;
+  }
+  .meet-team .executives .portfolio .overlay{
+    width: 90vw;
+  }
+}

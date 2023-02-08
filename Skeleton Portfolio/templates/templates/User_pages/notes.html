@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}Notes{% endblock %}
+
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='Images/logo.png')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='login-style.css') }}">
+    <script src="{{ url_for('static',filename='login-style.js') }}"></script>
+</head>
+
+
+
+<body>
+    <main>
+        <h1 class="notes_header">Notes</h1>
+        <hr>
+        <div class="notes_page">
+            <div class="post-notes">
+
+                <form align="center" method="POST">
+                    <textarea name="note" id="note" placname="note" id="note" placeholder="insert text here"eholder="insert text here"></textarea>
+                    <!-- <input type="text" name="note" id="note" placeholder="insert text here"> -->
+                    <div class="submit-button">
+                        <button id="submit" type="submit">Add Note</button>
+                    </div>
+                </form>
+            </div>
+            <div class="user-notes">
+                <h2>Your notes</h2>
+
+                <ul id="notes">
+                    {%for note in user.notes%}
+                    <li class="notes">{{note.data}}
+                        <button type="button" class="close" onclick="deleteNote({{note.id}})">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </li>
+                    {%endfor%}
+                </ul>
+            </div>
+        </div>
+    
+
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div>
+                <a class="highlight" href="/homepage">Home</a>
+                <a class="highlight" href="/notes">Notes</a>
+                <a class="highlight" href="/resources">Resources</a>
+                <a class="highlight" href="/profile">Profile</a>
+            </div> 
+            <div class="bottom">
+                <hr>
+                {% if user.is_authenticated%}
+                <a class='highlight' href="/logout">Logout</a>
+                {%else%}
+                <a class="highlight" href="/login">Login</a>
+                <a class="highlight" href="/signup">signup</a>
+                {% endif %}
+            </div>
+          </div>
+            <div id="main">
+              <button class="openbtn" onclick="openNav()">☰</button>  
+            </div>
+    </main>
+</body>
+</html>
+
+
+{% endblock%}

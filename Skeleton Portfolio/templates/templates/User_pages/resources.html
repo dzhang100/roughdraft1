@@ -1,0 +1,75 @@
+{% extends "base.html" %} 
+{% block title %}Resources{% endblock %} 
+
+{% block content%}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resources</title>
+        <script src="{{ url_for('static',filename='login-style.js') }}"></script>
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,800;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+    
+    <body>
+    
+        <main>
+    
+          <div class="resources-starter">
+            <h1>Resources</h1>
+            <div class="resources">
+                <div class="column">
+                    <h3>Educational Resources</h3>
+                    <h4>Grade 7 Material</h4>
+                    <ul>
+                        <li><a href="google.com">Math Nelson 7 textbook</a></li>
+                        <li><a href="google.com">Social 7 textbook</a></li>
+                        <li><a href="google.com">Science 7 textbook</a></li>
+                    </ul>
+                    <h4>Grade 8 Material</h4>
+                    <ul>
+                        <li><a href="google.com">Math Nelson 8 textbook</a></li>
+                        <li><a href="google.com">Social 8 textbook</a></li>
+                        <li><a href="google.com">Science 8 textbook</a></li>
+                    </ul>
+                    <h4>Grade 9 Material</h4>
+                    <ul>
+                        <li><a href="google.com">Math Nelson 9 textbook</a></li>
+                        <li><a href="google.com">Social 9 textbook</a></li>
+                        <li><a href="google.com">Science 9 textbook</a></li>
+                    </ul>
+
+                </div>
+                <div class="column">
+                    <h3>Additional Resources</h3>
+                    <h4>Math resources</h4>
+                    <ul>
+                        <li><a href="google.com">IXL.com</a></li>
+                        <li><a href="google.com">Mathmatics.com</a></li>
+                        <li><a href="google.com">AOPS</a></li>
+                    </ul>
+                    <h4>English resources</h4>
+                    <ul>
+                        <li><a href="google.com">Read Theory Reading comprehension</a></li>
+                    </ul>
+                    <h4>Science resources</h4>
+                    <ul>
+                        <li><a href="google.com">Math Nelson 9 textbook</a></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+    
+
+          
+    </body>
+</html>
+
+{%endblock%}

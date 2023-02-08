@@ -1,0 +1,141 @@
+{% extends "base.html" %} {% block title %}contact us{% endblock %} {% block content%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <script src="{{ url_for('static',filename='login-style.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+    <link rel="icon" type="image/png" href="../Images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+
+<body>
+  <main>
+    <div class="contacts">
+        <h1>Contact us!</h1>
+    
+    <hr>
+    <div class="texts">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+
+    <div class="row">
+        <div class="column1">
+          <h1>Social Media</h1>
+
+          <div class="logo">
+            <div class="icon">
+              <a href="https://www.instagram.com/lifelonglearners.yeg/?hl=en" target="_blank">
+                <img src="{{url_for('static', filename='Images/instagram.png')}}">
+              </a>
+              <h3>Instagram</h3>
+            </div>
+            <div class="icon">
+              <a href="mailto:lifelonglearners.info@gmail.com?" target="_blank">
+                <img src="{{url_for('static', filename='Images/gmail.png')}}">
+              </a>
+              <h3>Email</h3>
+            </div>
+            <div class="icon">
+              <a href="mailto:lifelonglearners.info@gmail.com?" target="_blank">
+                <img src="{{url_for('static', filename='Images/facebook.png')}}">
+              </a>
+              <h3>Facebook</h3>
+            </div>
+            <div class="icon">
+              <a href="https://linktr.ee/lifelonglearners" target="_blank">
+                <img src="{{url_for('static', filename='Images/link.png')}}">
+              </a>
+              <h3>Link Tree</h3>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="column2">
+          <div class="container">
+              <h1 class="title">Have a question? Contact us!</h1>
+              <hr style="margin-bottom: 1rem;">
+              <form action="https://formsubmit.co/danzhang0510@gmail.com" method="POST">
+            
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="name" placeholder="Your name..">
+            
+                <label for="lname">Email</label>
+                <input type="text" id="lname" name="Email" placeholder="Email...">
+            
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject"  style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <hr>
+      <div class="row">
+          <div class="col">
+            <img src="{{url_for('static', filename='Images/logo.png')}}">
+            <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor 
+              </p>
+          </div>
+          <div class="col">
+              <h3>Information <div class="underline"><span></span></div></h3>
+              <p>Old Scona Academic</p>
+              <p>Edmonton, Alberta</p>
+              <p class="email-id">Email.com</p>
+              <h4>(780)-123-4567</h4>
+          </div>
+    
+          <div class="col">
+              <h3>Links<div class="underline"><span></span></div></h3>
+              <ul>
+                  <li><a href="/pages/about.html">About</a></li>
+                  <li><a href="/pages/about.html">Contacts</a></li>
+                  <li><a href="/pages/about.html">Resources</a></li>
+                  <li><a href="/pages/about.html">Sign Up!</a></li>
+              </ul>
+          </div>
+          <div class="col">
+              <h3>Social Media<div class="underline"><span></span></div></h3>
+    
+              <div class="social-icons">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-whatsapp"></i>
+                  <i class="fab fa-pinterest"></i>
+    
+              </div>
+          </div>
+    
+      </div>
+      <hr>
+      <p class="copyright">Life Long Learning © 2023 - All Rights Reserved</p>
+    </footer>
+    
+</body>
+
+
+</html>
+
+{%endblock%}
